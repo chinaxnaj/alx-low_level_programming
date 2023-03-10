@@ -1,2 +1,2 @@
 #!/bin/bash
-echo liball.a > ls *.a
+echo liball.a > ls *.c
