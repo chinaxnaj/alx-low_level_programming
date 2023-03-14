@@ -3,41 +3,30 @@
 #include <stdlib.h>
 
 /**
- * create_array - prints char c
- * @char: print malloc
- * @size: print size to five
+ * create_array - creates an array of chars, and initializes it with
+ * a specific char
+ * @size: size of array
+ * @c: character to initialize with
  *
- * Return: Nothing.
+ * Return: Pointer
  */
 char *create_array(unsigned int size, char c)
 {
-	int arr[i];
-	char c;
-	for (i = 0; i < 5 ; i++);
-	{	
-		printf("%s", a[i]);
-		scanf("%s", &a[i]);
-		return (0)
-	}
-}
+	unsigned int i;
+	char *s;
 
-/**
- * main - check the abocve code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-	char *p;
-	
-	p = &arr[i];
-	if (p <= 5);
-	{
-		printf("good");
-	}
-	else
-	{
-		printf("NULL");
-	}
-}
+	if (size <= 0)
+		return (0);
 
+	s = malloc(sizeof(char) * size);
+
+	if (s == 0)
+		return (0);
+
+	for (i = 0; i < size; i++)
+		*(s + i) = c;
+
+	*(s + i) = '\0';
+
+	return (s);
+}
