@@ -45,6 +45,7 @@ void print_all(const char * const format, ...)
 			printf("%p", p);
 			break; }
 		j++;
-	}printf("\n");
+	}
+	printf("\n");
 	va_end(list);
 }
